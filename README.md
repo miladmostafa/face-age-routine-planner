@@ -34,13 +34,21 @@ Requires Node.js 20 or newer.
 git clone https://github.com/miladmostafa/face-age-routine-planner.git
 cd face-age-routine-planner
 npm install
-npm install face-age@latest
 cp .env.example .env.local
 ```
 
-Edit `.env.local` and set `VITE_FACEAGE_CLIENT_ID` to your own Client ID. Then start the app:
+### Install the latest face-age package
+
+Before building, install the latest [face-age](https://www.npmjs.com/package/face-age) package in a separate step. The skincare routine planner loads the current Face Age scanner from npm:
 
 ```bash
+npm install face-age@latest
+```
+
+Edit `.env.local` and set `VITE_FACEAGE_CLIENT_ID` to your own Client ID. Then build and start the app:
+
+```bash
+npm run build
 npm run dev
 ```
 
@@ -94,9 +102,11 @@ Choose **Export calendar (.ics)** and import that file into Google Calendar. Mor
 
 ### Which Face Age package is used?
 
-The widget comes from the [`face-age`](https://www.npmjs.com/package/face-age) npm package. Install or update it with `npm install face-age@latest`.
+The widget comes from the latest [`face-age`](https://www.npmjs.com/package/face-age) npm release. Before building, install it with the separate command `npm install face-age@latest`.
 
 ## Scripts
+
+Run the separate install step, `npm install face-age@latest`, before building.
 
 ```bash
 npm test
