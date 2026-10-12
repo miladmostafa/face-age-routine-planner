@@ -143,7 +143,15 @@ h1 {
   margin: 12px 0;
 }
 
-.callout { border-left: 4px solid var(--clay); }
+.callout {
+  border-left: 4px solid var(--clay);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.callout p { margin: 0; }
 
 .capture-card { border-left: 4px solid var(--teal); }
 
@@ -166,8 +174,6 @@ h1 {
   color: var(--ink);
   border: 1px solid var(--line);
 }
-
-.button-small { margin-left: 8px; padding: 8px 12px; }
 
 .button-row, .settings {
   display: flex;

@@ -118,9 +118,11 @@ export function TodayPlan(props: TodayPlanProps) {
 
       {rescanDue && plan ? (
         <div className="callout" role="status">
-          <strong>Time to rescan.</strong> This plan was saved {formatWhen(plan.savedAt)}. Run a new Face Age scan and
-          save the updated cosmetic routine.
-          <button type="button" className="button button-small" onClick={onScrollToScanner}>
+          <p>
+            <strong>Time to rescan.</strong> This plan was saved {formatWhen(plan.savedAt)}. Run a new Face Age scan and
+            save the updated cosmetic routine.
+          </p>
+          <button type="button" className="button" onClick={onScrollToScanner}>
             Go to scanner
           </button>
         </div>
