@@ -1,0 +1,61 @@
+{
+  "name": "face-age-routine-planner",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Daily skincare routine planner and reminders. Turns a Face Age morning and evening routine into a checklist with streaks, local notifications, and calendar export.",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "face-age",
+    "skincare",
+    "skincare-routine",
+    "routine-planner",
+    "skin-analysis",
+    "skin-scanner",
+    "reminders",
+    "calendar",
+    "ics",
+    "checklist",
+    "streaks"
+  ],
+  "homepage": "https://github.com/miladmostafa/face-age-routine-planner",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miladmostafa/face-age-routine-planner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/miladmostafa/face-age-routine-planner/issues"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "face-age": "^2.4.13",
+    "ics": "^3.8.1",
+    "idb": "^8.0.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "@vitejs/plugin-react": "^4.5.2",
+    "esbuild": "^0.25.5",
+    "eslint": "^9.28.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "fake-indexeddb": "^6.2.2",
+    "globals": "^16.2.0",
+    "jsdom": "^26.1.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.33.1",
+    "vite": "^6.3.5",
+    "vitest": "^3.2.1"
+  }
+}
